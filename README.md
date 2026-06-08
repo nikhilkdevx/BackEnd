@@ -18,7 +18,7 @@ Current topics include:
 
 More topics will be added as I continue learning.
 
-## Important Note
+## Important Note 
 
 This repository is a learning workspace rather than a production-ready codebase.
 
