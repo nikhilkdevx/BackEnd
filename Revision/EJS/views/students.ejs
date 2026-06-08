@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+</head>
+<body>
+    <h1>The name of The student  :</h1>
+    <% for(let student of students){ %>
+     Name : <%= student.Name  %>  &nbsp; &nbsp; &nbsp; &nbsp;  
+     Marks : <%= student.Marks %> &nbsp; &nbsp; &nbsp; &nbsp;
+     city : <%= student.city %> &nbsp; &nbsp; &nbsp; &nbsp;
+        <% if(student.Marks > 90){%>
+            Result : A+
+        
+            <% } else if(student.Marks >80 && student.Marks < 90){ %> 
+                Result : A
+            
+            <% } else if(student.Marks >70 && student.Marks <80){ %>
+                    Result : B
+            
+            <% } else { %>
+                    Result : C
+        <% } %> <br> 
+                
+            
+        
+    <% } %>
+</body>
+</html>
+
+
