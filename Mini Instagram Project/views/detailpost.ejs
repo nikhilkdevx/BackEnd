@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See Detailed Post</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+   <h1>At Detail Post</h1> 
+   <div class="outerbox">
+            <div class="imagebox">
+                <img src="<%= post.imageUrl %>"/>
+            </div>
+            <h3>@<%=post.username %></h3>
+            <h4><%=post.caption %></h4>
+            <a href="http://localhost:8080/editpost">Edit Post</a>
+        </div>
+        <br>
+        <br>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Instagram</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Mini Instagram</h1>
+    <a href="http://localhost:8080/newpost">Create New Post</a>
+    <br>
+    <br>
+    <% for(post of posts){ %>
+        <div class="outerbox">
+            <div class="imagebox">
+                <img src="<%= post.imageUrl %>"/>
+            </div>
+            <h3>@<%=post.username %></h3>
+            <h4><%=post.caption %></h4>
+            <a href="http://localhost:8080/detailedpost/<%= post.id %>">See in Detail</a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="http://localhost:8080/editpost/<%= post.id %>">Edit Post</a>
+            &nbsp;&nbsp;&nbsp;
+            <br>
+            <br>
+            <form method="post" action="/deletepost/<%= post.id %>?_method=DELETE">
+                <button>Delete Post</button>
+            </form>
+            
+        </div>
+        <br>
+        <br>
+    <% } %>
+</body>
+</html>
+
+

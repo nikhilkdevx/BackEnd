@@ -1,0 +1,24 @@
+h1{
+    color:Pink;
+}
+.outerbox{
+    height : 360px;
+    width : 300px;
+    border : 2px solid white;
+
+}
+.imagebox{
+    height : 200px;
+    width :  300px;
+    border : 1px solid white;
+    
+}
+.imagebox img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+h4{
+    font-size: small;
+}
+
